@@ -39,6 +39,9 @@ public class TasksApplication {
 
     public void addTask(String name) {
         try {
+            if (name == null || name.isBlank()) {
+                return;
+            }
             String date = today.format(formatter);
             Task task = new Task(name, date);
             repository.save(task);
