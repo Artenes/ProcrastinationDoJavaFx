@@ -17,15 +17,15 @@
          <children>
             <VBox alignment="CENTER" layoutX="16.0" layoutY="21.0" prefHeight="123.0" prefWidth="454.0" styleClass="header" stylesheets="@styles.css">
                <children>
-                  <Text fill="#ffebeb" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Procrastination-do">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: green;" styleClass="title" text="Procrastination-do">
                      <font>
                         <Font name="Segoe UI Bold" size="24.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="20.0" />
                      </VBox.margin>
                   </Text>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="While procrastinating you can ignore things, but never delete them.After adding an item, just change the text or date in each item and it will be saved automatically." textAlignment="CENTER" wrappingWidth="400.0">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: green;" styleClass="description" text="While procrastinating you can ignore things, but never delete them. After adding an item, just change the text and it will be saved automatically." textAlignment="CENTER" wrappingWidth="400.0">
                      <font>
                         <Font name="Segoe UI" size="12.0" />
                      </font>
@@ -47,7 +47,7 @@
                         <Insets />
                      </VBox.margin>
                   </DatePicker>
-                  <TextField fx:id="fieldName" alignment="CENTER" maxWidth="200.0" prefHeight="25.0" prefWidth="290.0" promptText="Type in and hit enter">
+                  <TextField fx:id="fieldName" alignment="CENTER" maxWidth="200.0" prefHeight="25.0" prefWidth="290.0" promptText="Type in and hit enter" styleClass="taskName" stylesheets="@styles.css">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>

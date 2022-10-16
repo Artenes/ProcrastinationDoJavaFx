@@ -85,6 +85,8 @@ public class TasksApplication {
         int days = period.getDays();
 
         //approximation that does not take into account months with 31/28 days or leap years
+        //Period class up there goes from 0 to 30 days, then back to 0 because it ignores
+        //months and years 🤦
         return (years*365) + (months*30) + days;
     }
 

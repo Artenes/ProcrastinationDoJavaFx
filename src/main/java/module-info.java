@@ -1,4 +1,4 @@
-module artenes.todo {
+module artenes.procrastination {
     requires javafx.controls;
     requires javafx.fxml;
     requires com.fasterxml.jackson.core;

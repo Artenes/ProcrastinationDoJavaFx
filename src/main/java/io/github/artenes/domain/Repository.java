@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("ClassCanBeRecord")
 public class Repository {
 
     private static final String DB_NAME = "storage.json";

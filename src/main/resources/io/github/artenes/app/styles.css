@@ -1,27 +1,30 @@
 .body {
-
-    -fx-background-color: rgb(27,27,53);
-
+    -fx-background-color: #1a1a33;
 }
 
 .container {
-
     -fx-background-color: #0C0E1D;
-    -fx-background-radius: 25 25 25 25;
-
+    -fx-background-radius: 15 15 15 15;
 }
 
 .header {
-
     -fx-background-color: #2c2b53;
     -fx-text-align: center;
-
+    -fx-background-radius: 15 15 15 15;
 }
 
 .title {
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Segoe UI"
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
 
-    -fx-text-fill: #FAFAF8;
-
+.description {
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Segoe UI"
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
 }
 
 .scroll-pane {
