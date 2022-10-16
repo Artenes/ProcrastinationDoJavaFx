@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="1068.0" styleClass="body" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.artenes.app.FXMLController">
+   <children>
+      <Pane maxHeight="614.0" maxWidth="484.0" minHeight="200.0" minWidth="200.0" prefHeight="614.0" prefWidth="484.0" styleClass="container" stylesheets="@styles.css" StackPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="16.0" layoutY="21.0" prefHeight="123.0" prefWidth="454.0" styleClass="header" stylesheets="@styles.css">
+               <children>
+                  <Text fill="#ffebeb" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Procrastination-do">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="While procrastinating you can ignore things, but never delete them.After adding an item, just change the text or date in each item and it will be saved automatically." textAlignment="CENTER" wrappingWidth="400.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BASELINE_CENTER" layoutX="17.0" layoutY="158.0" prefHeight="135.0" prefWidth="454.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Today is">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="todayDate">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="fieldName" alignment="CENTER" maxWidth="200.0" prefHeight="25.0" prefWidth="290.0" promptText="Type in and hit enter">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <ScrollPane hbarPolicy="NEVER" layoutX="143.0" layoutY="266.0" prefHeight="324.0" prefWidth="218.0" stylesheets="@styles.css" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="tasksList" maxHeight="322.0" maxWidth="1.7976931348623157E308" prefHeight="322.0" styleClass="taskList" stylesheets="@styles.css" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
