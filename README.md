@@ -2,6 +2,14 @@
 
 A joke java fx todo app where you add items to procrastinate and as the days goes by their size increases until the app is unusable.
 
+# Running
+
+````
+./gradlew run
+````
+
+# Application
+
 ![Default State](prints/printA.png)
 
 When you are starting out
