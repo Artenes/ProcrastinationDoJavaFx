@@ -15,15 +15,15 @@
 
 .title {
     -fx-text-fill: #FFF;
-    -fx-font-family: "Segoe UI"
-    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 2em;
     -fx-font-weight: bold;
 }
 
 .description {
     -fx-text-fill: #FFF;
-    -fx-font-family: "Segoe UI"
-    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 1.1em;
     -fx-font-weight: normal;
 }
 
